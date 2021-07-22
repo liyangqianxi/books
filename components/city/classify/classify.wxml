@@ -1,0 +1,8 @@
+<view class="option">
+  <view wx:for="{{list}}" bindtap="goto" data-item='{{item}}' data-index="{{index}}" wx:key="index">
+    <view class="case">
+      <view>{{item.name}}</view>
+      <view class="amount">{{item.bookCount}}本</view>
+    </view>
+  </view>
+</view>

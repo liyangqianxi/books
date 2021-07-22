@@ -1,0 +1,110 @@
+.frame {
+  background-color: #dddddd;
+  width: 90%;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  margin: 20rpx auto;
+}
+.headBox{
+  height: 150rpx;
+}
+.center {
+  text-align: center;
+}
+
+.inp {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.cephalosome {
+  width: 100%;
+  padding: 20rpx 0;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.grabble {
+  position: absolute;
+  left: 100rpx;
+  top: 60rpx;
+}
+
+.remove {
+  position: absolute;
+  top: 60rpx;
+  right: 40rpx;
+}
+
+.barter {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trade {
+  display: flex;
+}
+
+.exchange {
+  color: orange;
+  margin-left: 30rpx;
+}
+
+.word {
+  margin: 20rpx;
+  border-radius: 4rpx;
+  float: left;
+  color: #fff;
+  padding: 10rpx;
+  font-size: 28rpx;
+}
+.delete{
+  color: orange;
+  margin:0 30rpx;
+}
+.bookmark{
+  width: 90%;
+  border-bottom:1rpx solid grey ;
+  padding: 30rpx 20rpx;
+  display: flex;
+  margin: 0 auto;
+}
+.img{
+  width: 200rpx;
+  height: 300rpx;
+}
+.particulars{
+  margin-left: 30rpx;
+}
+.author{
+  font-size: 30rpx;
+  color: grey;
+  margin-top: 15rpx;
+}
+.shortIntro{
+  font-size: 30rpx;
+  color: grey;
+  margin-top: 15rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+.history{
+  width: 90%;
+  margin: 20rpx auto;
+  border-bottom:1rpx solid #dddddd ;
+  padding: 30rpx 0;
+}

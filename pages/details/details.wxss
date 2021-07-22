@@ -1,0 +1,241 @@
+.tabset {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  background-color: white;
+}
+
+.nav_tab {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  background: white;
+  border-bottom: 1rpx solid grey;
+}
+
+/* 未选中的样式 */
+.common {
+  line-height: 100rpx;
+  text-align: center;
+  flex: 1;
+  color: black;
+  font-size: 32rpx;
+  opacity: 0.5;
+}
+
+/* 选中时的样式 */
+.active {
+  line-height: 100rpx;
+  text-align: center;
+  color: red;
+  flex: 1;
+  font-size: 32rpx;
+}
+
+/* 下划线的样式 */
+.nav_underline {
+  background: red;
+  width: 80rpx;
+  height: 6rpx;
+  margin-top: -10rpx;
+  margin-left: 130rpx;
+  border-radius: 8rpx;
+}
+
+.img {
+  width: 250rpx;
+  height: 350rpx;
+}
+
+.box {
+  position: absolute;
+  top: 50rpx;
+  left: 33%;
+}
+
+.head {
+  width: 100%;
+  height: 200rpx;
+  background-color: #D00000;
+}
+
+.title {
+  /* width: 150rpx;
+  margin: 0 auto; */
+  margin-top: 230rpx;
+  text-align: center;
+}
+
+.author {
+  color: grey;
+  text-align: center;
+  margin: 10rpx 0;
+  font-size: 32rpx;
+  /* width: 122rpx; */
+}
+
+.detail {
+  font-size: 30rpx;
+  text-align: center;
+  margin-top: -70rpx;
+  background-color: rgb(243, 243, 243);
+}
+
+.btn {
+  width: 600rpx;
+  margin: 30rpx auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn1 {
+  border-radius: 45rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 260rpx;
+  background-color: #D00000;
+  color: white;
+  text-align: center;
+}
+
+.btn2 {
+  border-radius: 45rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 260rpx;
+  background-color: white;
+  border: 1rpx solid grey;
+  text-align: center;
+}
+
+.boxes {
+  height: 50rpx;
+}
+
+.minute {
+  width: 250rpx;
+  margin: 20rpx auto;
+}
+
+.star {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.lastChapter {
+  color: rgb(64, 224, 208);
+}
+
+.scroll {
+  height: 800rpx;
+  background-color: white;
+}
+
+.synopsis {
+  text-align: left;
+  padding: 30rpx;
+}
+
+.catalogue {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 15rpx;
+  left: 140rpx;
+}
+
+.wordage {
+  margin-left: 80rpx;
+}
+
+.catalog {
+  width: 92%;
+  background-color: #dddddd;
+  margin: 20rpx auto;
+  height: 85rpx;
+  line-height: 80rpx;
+  position: relative;
+}
+
+.refresh {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 100rpx;
+}
+
+.books {
+  padding: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.exchange {
+  color: orange;
+  position: absolute;
+  right: 30rpx;
+  bottom: 45rpx;
+}
+.base{
+  width: 100%;
+  padding-bottom: 100rpx;
+  background-color: rgb(243, 243, 243);
+}
+.picture{
+  width: 200rpx;
+  height: 280rpx;
+  margin: 0 10rpx;
+}
+.floor{
+  display: flex;
+}
+.headline{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  margin: 20rpx 0;
+}
+.photo{
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 40rpx;
+}
+.remark{
+  background-color: white;
+  text-align: left;
+}
+.review{
+  padding: 30rpx 20rpx;
+  display: flex;
+}
+.nickname{
+  color: #D00000;
+  margin-bottom: 20rpx;
+}
+.nothing{
+  height: 500rpx;
+  background-color: white;
+  margin-top:50rpx ;
+}
+.magnify{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+.amplification{
+  width: 650rpx;
+  margin: 50rpx auto;
+}
+.enlargement{
+  width: 650rpx;
+  height: 1000rpx;
+}

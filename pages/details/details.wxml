@@ -1,0 +1,89 @@
+<view class="magnify" wx:if="{{show}}">
+  <view class="amplification">
+    <image bindlongpress="press" bindtap="preview" class="enlargement" src="{{url+details.cover}}"></image>
+  </view>
+</view>
+<view>
+  <view class="box" wx:if="{{details.cover}}">
+    <image  bindtap="preview" class="img" src="{{url+details.cover}}"></image>
+  </view>
+  <view class="head"></view>
+  <view class="title">{{details.title}}</view>
+  <view class="author">{{details.author}}</view>
+  <view class="btn">
+    <view class="btn1">开始阅读</view>
+    <view class="btn2" bindtap="join">{{append}}</view>
+  </view>
+  <view class="detail">
+    <view class="boxes "></view>
+    <view class="minute ">
+      <image class="star" wx:for="{{score}}" wx:key="index" src="../../assets/star-active.png"></image>
+      <image class="star" wx:for="{{5-score}}" wx:key="index" src="../../assets/star.png"></image>
+    </view>
+    <view>更新至 <text class="lastChapter">{{details.lastChapter}}</text></view>
+    <view class="tabset">
+      <view class="nav_title">
+        <view class="nav_tab">
+          <!-- 如果选中的下表等于当前的索引，就使用active class名，否则class名为common -->
+          <view wx:for="{{list}}" wx:key="list" class="{{selected==index?'active':'common'}}" data-index='{{index}}'
+            bindtap="selected">
+            {{item}}
+            <!-- 如果选中的下表等于当前的索引，就添加下划线 -->
+            <view class="{{selected==index?'nav_underline':''}}"></view>
+          </view>
+        </view>
+
+        <!-- tab1  -->
+        <view wx:if="{{selected == 0}}">
+          <view class="base">
+            <scroll-view scroll-y="true" class="scroll">
+              <view class="synopsis">
+                简介： {{details.longIntro}}
+              </view>
+              <view class="catalog">
+                <image class="catalogue" src="../../assets/catalogue.png"></image><text
+                  class="wordage">总目录（{{details.chaptersCount}}章）</text>
+              </view>
+              <view class="books">
+                <view>看过这本书的还在看</view>
+                <view bindtap="exchange">
+                  <image class="refresh" src="../../assets/flush.png"></image><text class="exchange">换一换</text>
+                </view>
+              </view>
+              <view class="floor">
+                <view wx:for="{{recommend}}" wx:key="index" data-item="{{item}}" data-index="{{index}}" bindtap="goto">
+                  <view>
+                    <image class="picture" src="{{url+item.cover}}"></image>
+                    <view class="headline">{{item.title}}</view>
+                  </view>
+                </view>
+              </view>
+            </scroll-view>
+          </view>
+
+        </view>
+        <!-- tab2 -->
+        <view wx:if="{{selected == 1}}">
+          <view class="base">
+            <view class="remark" wx:if="{{discuss.length>0}}">
+              <view wx:for="{{discuss}}" wx:key="index">
+                <view class="review">
+                  <view>
+                    <image class="photo" src="{{url+item.author.avatar}}"></image>
+                  </view>
+                  <view>
+                    <view class="nickname">{{item.author.nickname}}</view>
+                    <view>{{item.content}}</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="nothing" wx:if="{{discuss.length===0}}">暂无评论</view>
+          </view>
+
+        </view>
+      </view>
+
+    </view>
+  </view>
+</view>

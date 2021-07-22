@@ -1,0 +1,93 @@
+.nav_tab {
+  width: 750rpx;
+  height: 100rpx;
+  display: flex;
+  border-radius: 10rpx;
+  flex-direction: row;
+  background: #dddddd;
+}
+/* 未选中的样式 */
+.common {
+  line-height: 100rpx;
+  text-align: center;
+  flex: 1;
+  color: black;
+  font-size: 32rpx;
+  opacity: 0.5;
+}
+/* 选中时的样式 */
+.active {
+  line-height: 100rpx;
+  text-align: center;
+  color: red;
+  flex: 1;
+  font-size: 32rpx;
+}
+/* 下划线的样式 */
+.nav_underline {
+  background: red;
+  width: 80rpx;
+  height: 6rpx;
+  margin-top: -10rpx;
+  margin-left: 87rpx;
+  border-radius: 8rpx;
+}
+
+.bookmark{
+  width: 90%;
+  border-bottom:1rpx solid grey ;
+  padding: 30rpx 20rpx;
+  display: flex;
+  margin: 0 auto;
+}
+.img{
+  width: 200rpx;
+  height: 300rpx;
+}
+.particulars{
+  margin-left: 30rpx;
+}
+.author{
+  font-size: 30rpx;
+  color: grey;
+  margin-top: 15rpx;
+}
+.shortIntro{
+  font-size: 30rpx;
+  color: grey;
+  margin-top: 15rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+.tags{
+  font-size: 30rpx;
+  display: flex;
+  margin-top: 20rpx;
+}
+.tags1{
+  padding: 5rpx;
+  color: white;
+  background-color: orange;
+  margin-right: 10rpx;
+}
+.tags2{
+  padding: 5rpx;
+  color: white;
+  background-color: rgba(0, 247, 255);
+  margin-right: 10rpx;
+}
+.tags3{
+  padding: 5rpx;
+  color: white;
+  background-color: red;
+  margin-right: 10rpx;
+}
+.text{
+  width: 155rpx;
+  margin: 50rpx auto;
+
+}

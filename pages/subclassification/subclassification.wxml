@@ -1,0 +1,161 @@
+<view class="nav_title">
+  <view class="wire">
+    <view class="nav_tab1">
+      <!-- 如果选中的下表等于当前的索引，就使用active class名，否则class名为common -->
+      <view wx:for="{{typeList}}" wx:key="typeList" class="{{selected1==index?'active':'common'}}" data-item="{{item}}"
+        data-index='{{index}}' bindtap="selected1">
+        {{item.name}}
+        <!-- 如果选中的下表等于当前的索引，就添加下划线 -->
+        <view class="{{selected==index?'nav_underline':''}}"></view>
+      </view>
+    </view>
+  </view>
+  <view class="du">
+  <scroll-view scroll-x="true" class="scroll">
+  <view  wx:if="{{male.length>0}}">
+    <view class="nav_tab">
+      <!-- 如果选中的下表等于当前的索引，就使用active class名，否则class名为common -->
+      <view wx:for="{{male}}" wx:key="male" class="{{selected==index?'active':'common'}}" data-index='{{index}}'
+        data-item="{{item}}" bindtap="selected">
+        {{item}}
+        <!-- 如果选中的下表等于当前的索引，就添加下划线 -->
+        <view class="{{selected==index?'nav_underline':''}}"></view>
+      </view>
+    </view>
+  </view>
+  </scroll-view>
+  </view>
+  
+  
+  <!-- tab1  -->
+  <view wx:if="{{selected == 0}}">
+    <view class="bookmark" wx:for="{{book}}" wx:key="index" data-item='{{item}}' data-index="{{index}}" wx:if="{{book.length>0}}" bindtap="onclick">
+      <view>
+        <image class="img" src="{{url+item.cover}}"></image>
+      </view>
+      <view class="particulars">
+        <view class="title">{{item.title}}</view>
+        <view class="author">{{item.author}}</view>
+        <view class="shortIntro">{{item.shortIntro}}</view>
+        <view class="tags">
+          <view class="tags1" wx:if="{{item.tags[0]}}">{{item.tags[0]}}</view>
+          <view class="tags2" wx:if="{{item.tags[1]}}">{{item.tags[1]}}</view>
+          <view class="tags3" wx:if="{{item.tags[2]}}">{{item.tags[2]}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="text" wx:if="{{book.length==0}}">暂无书籍</view>
+  </view>
+  <!-- tab2 -->
+  <view wx:if="{{selected == 1}}">
+    <view class="bookmark" wx:for="{{book}}" wx:key="index" data-item='{{item}}' data-index="{{index}}" wx:if="{{book.length>0}}" bindtap="onclick">
+      <view>
+        <image class="img" src="{{url+item.cover}}"></image>
+      </view>
+      <view class="particulars">
+        <view class="title">{{item.title}}</view>
+        <view class="author">{{item.author}}</view>
+        <view class="shortIntro">{{item.shortIntro}}</view>
+        <view class="tags">
+          <view class="tags1" wx:if="{{item.tags[0]}}">{{item.tags[0]}}</view>
+          <view class="tags2" wx:if="{{item.tags[1]}}">{{item.tags[1]}}</view>
+          <view class="tags3" wx:if="{{item.tags[2]}}">{{item.tags[2]}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="text" wx:if="{{book.length==0}}">暂无书籍</view>
+  </view>
+  <!-- tab3 -->
+  <view wx:if="{{selected == 2}}">
+    <view class="bookmark" wx:for="{{book}}" wx:key="index" data-item='{{item}}' data-index="{{index}}" wx:if="{{book.length>0}}" bindtap="onclick">
+      <view>
+        <image class="img" src="{{url+item.cover}}"></image>
+      </view>
+      <view class="particulars">
+        <view class="title">{{item.title}}</view>
+        <view class="author">{{item.author}}</view>
+        <view class="shortIntro">{{item.shortIntro}}</view>
+        <view class="tags">
+          <view class="tags1" wx:if="{{item.tags[0]}}">{{item.tags[0]}}</view>
+          <view class="tags2" wx:if="{{item.tags[1]}}">{{item.tags[1]}}</view>
+          <view class="tags3" wx:if="{{item.tags[2]}}">{{item.tags[2]}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="text" wx:if="{{book.length==0}}">暂无书籍</view>
+  </view>
+  <!-- tab4 -->
+  <view wx:if="{{selected == 3}}">
+    <view class="bookmark" wx:for="{{book}}" wx:key="index" data-item='{{item}}' data-index="{{index}}" wx:if="{{book.length>0}}" bindtap="onclick">
+      <view>
+        <image class="img" src="{{url+item.cover}}"></image>
+      </view>
+      <view class="particulars">
+        <view class="title">{{item.title}}</view>
+        <view class="author">{{item.author}}</view>
+        <view class="shortIntro">{{item.shortIntro}}</view>
+        <view class="tags">
+          <view class="tags1" wx:if="{{item.tags[0]}}">{{item.tags[0]}}</view>
+          <view class="tags2" wx:if="{{item.tags[1]}}">{{item.tags[1]}}</view>
+          <view class="tags3" wx:if="{{item.tags[2]}}">{{item.tags[2]}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="text" wx:if="{{book.length==0}}">暂无书籍</view>
+  </view>
+  <!-- tab5-->
+  <view wx:if="{{selected == 4}}">
+    <view class="bookmark" wx:for="{{book}}" wx:key="index" data-item='{{item}}' data-index="{{index}}" wx:if="{{book.length>0}}" bindtap="onclick">
+      <view>
+        <image class="img" src="{{url+item.cover}}"></image>
+      </view>
+      <view class="particulars">
+        <view class="title">{{item.title}}</view>
+        <view class="author">{{item.author}}</view>
+        <view class="shortIntro">{{item.shortIntro}}</view>
+        <view class="tags">
+          <view class="tags1" wx:if="{{item.tags[0]}}">{{item.tags[0]}}</view>
+          <view class="tags2" wx:if="{{item.tags[1]}}">{{item.tags[1]}}</view>
+          <view class="tags3" wx:if="{{item.tags[2]}}">{{item.tags[2]}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="text" wx:if="{{book.length==0}}">暂无书籍</view>
+  </view>
+  <view wx:if="{{selected == 5}}">
+    <view class="bookmark" wx:for="{{book}}" wx:key="index" data-item='{{item}}' data-index="{{index}}" wx:if="{{book.length>0}}" bindtap="onclick">
+      <view>
+        <image class="img" src="{{url+item.cover}}"></image>
+      </view>
+      <view class="particulars">
+        <view class="title">{{item.title}}</view>
+        <view class="author">{{item.author}}</view>
+        <view class="shortIntro">{{item.shortIntro}}</view>
+        <view class="tags">
+          <view class="tags1" wx:if="{{item.tags[0]}}">{{item.tags[0]}}</view>
+          <view class="tags2" wx:if="{{item.tags[1]}}">{{item.tags[1]}}</view>
+          <view class="tags3" wx:if="{{item.tags[2]}}">{{item.tags[2]}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="text" wx:if="{{book.length==0}}">暂无书籍</view>
+  </view>
+  <view wx:if="{{selected == 6}}">
+    <view class="bookmark" wx:for="{{book}}" wx:key="index" data-item='{{item}}' data-index="{{index}}" wx:if="{{book.length>0}}" bindtap="onclick">
+      <view>
+        <image class="img" src="{{url+item.cover}}"></image>
+      </view>
+      <view class="particulars">
+        <view class="title">{{item.title}}</view>
+        <view class="author">{{item.author}}</view>
+        <view class="shortIntro">{{item.shortIntro}}</view>
+        <view class="tags">
+          <view class="tags1" wx:if="{{item.tags[0]}}">{{item.tags[0]}}</view>
+          <view class="tags2" wx:if="{{item.tags[1]}}">{{item.tags[1]}}</view>
+          <view class="tags3" wx:if="{{item.tags[2]}}">{{item.tags[2]}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="text" wx:if="{{book.length==0}}">暂无书籍</view>
+  </view>
+</view>

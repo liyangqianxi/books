@@ -1,0 +1,13 @@
+.headline{
+  width: 90%;
+  margin: 0 auto;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #dddddd;
+}
+.text{
+  padding: 30rpx 0;
+  font-size: 30rpx;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1rpx solid #dddddd;
+}

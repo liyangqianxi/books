@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/city/city",
+    "pages/search/search",
+    "pages/subclassification/subclassification",
+    "pages/details/details",
+    "pages/platoon/platoon",
+    "pages/assistance/assistance"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#D00000",
+    "navigationBarTitleText": "可儿看书",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#D00000",
+    "list": [
+      {
+        "text": "书架",
+        "pagePath": "pages/index/index",
+        "iconPath": "assets/bookrack.png",
+        "selectedIconPath": "assets/bookrack-active.png"
+      },
+      {
+        "text": "书城",
+        "pagePath": "pages/city/city",
+        "iconPath": "assets/city.png",
+        "selectedIconPath": "assets/city-active.png"
+      },
+      {
+        "text": "搜索",
+        "pagePath": "pages/search/search",
+        "iconPath": "assets/search.png",
+        "selectedIconPath": "assets/search-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

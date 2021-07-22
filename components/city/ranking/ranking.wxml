@@ -1,0 +1,8 @@
+<view class="option">
+  <view wx:for="{{arr}}" bindtap="goto" data-item='{{item}}' data-index="{{index}}" wx:key="index">
+    <view class="case">
+    <image class="img" src="{{url+item.cover}}"></image>
+      <view class="amount">{{item.title}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+.case {
+  width: 635rpx;
+  margin: 0 auto;
+  line-height: 90rpx;
+  border-bottom: 1rpx solid grey;
+  height: 100rpx;
+  padding: 0 30rpx;
+  display: flex;
+}
+.img{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+  margin-top: 15rpx;
+}

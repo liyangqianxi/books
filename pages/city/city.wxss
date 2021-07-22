@@ -1,0 +1,44 @@
+/* pages/city/city.wxss */
+.headBox{
+  height: 100rpx;
+}
+.nav_tab {
+  position: fixed;
+  top: 0;
+  width: 750rpx;
+  height: 100rpx;
+  display: flex;
+  border-radius: 10rpx;
+  flex-direction: row;
+  background: #dddddd;
+}
+/* 未选中的样式 */
+.common {
+  line-height: 100rpx;
+  text-align: center;
+  flex: 1;
+  color: black;
+  font-size: 32rpx;
+  opacity: 0.5;
+}
+/* 选中时的样式 */
+.active {
+  line-height: 100rpx;
+  text-align: center;
+  color: red;
+  flex: 1;
+  font-size: 32rpx;
+}
+/* 下划线的样式 */
+.nav_underline {
+  background: red;
+  width: 80rpx;
+  height: 6rpx;
+  margin-top: -10rpx;
+  margin-left: 150rpx;
+  border-radius: 8rpx;
+}
+.tltle{
+  padding:40rpx 25rpx ;
+  color: grey;
+}

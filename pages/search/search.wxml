@@ -1,0 +1,54 @@
+<view class="cephalosome">
+  <view class="grabble">
+    <image wx:if="{{show===false}}" class="logo" src="../../assets/grabble.png"></image>
+  </view>
+  <view class="remove" bindtap="cancel">
+    <image wx:if="{{show===true}}" class="logo" src="../../assets/remove.png"></image>
+  </view>
+  <view class="frame">
+    <input class="inp" value="{{value}}" bindconfirm="search" bindinput="input" placeholder='输入书名或作者名'
+      placeholder-class="center"></input>
+  </view>
+</view>
+<view class="headBox"></view>
+<view wx:if="{{search===true}}">
+  <view class="barter">
+    <view>大家都在搜</view>
+    <view class="trade" bindtap="switchover">
+      <view>
+        <image class="logo" src="../../assets/flush.png"></image>
+      </view>
+      <view class="exchange">换一换</view>
+    </view>
+  </view>
+  <view class="hotWord">
+    <block wx:for="{{hotspot}}" wx:key="key" wx:for-index="key" wx:for-item="v" >
+      <view class="word"  style="background-color:{{colorArr[key]}}" data-key="{{key}}" data-v="{{v}}"  bindtap="switchexchange" >{{v.word}}</view>
+    </block>
+  </view>
+  <view class="barter">
+    <view>搜索历史</view>
+    <view class="trade">
+      <view>
+        <image class="logo" src="../../assets/delete.png"></image>
+      </view>
+      <view class="delete" bindtap="switchover">删除</view>
+    </view>
+  </view>
+  <view wx:for="{{gather}}" wx:key="index" data-item="{{item}}" data-index="{{index}}" bindtap="collect">
+    <view class="history">{{item.name}}</view>
+  </view>
+</view>
+<view wx:if="{{search===false}}">
+  <view class="bookmark" wx:for="{{shoopingarray}}" wx:key="index" data-item='{{item}}' data-index="{{index}}"
+    wx:if="{{shoopingarray.length>0}}" bindtap="onclick">
+    <view>
+      <image class="img" src="{{url+item.cover}}"></image>
+    </view>
+    <view class="particulars">
+      <view class="title">{{item.title}}</view>
+      <view class="author">{{item.author}}</view>
+      <view class="shortIntro">{{item.shortIntro}}</view>
+    </view>
+  </view>
+</view>

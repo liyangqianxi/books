@@ -1,0 +1,15 @@
+.option{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 36rpx;
+}
+.case{
+  width: 248rpx;
+  border: 2rpx solid #dddddd;
+  height: 120rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+.amount{
+  color: grey;
+}

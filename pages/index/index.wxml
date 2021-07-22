@@ -1,0 +1,28 @@
+<view class="head">
+  <view bindtap="compile">
+    <view wx:if="{{show===true}}">
+      <image class="logo" src="../../assets/correct.png"></image>
+    </view>
+    <view wx:if="{{show===false}}">
+      <image class="logo" src="../../assets/edit.png"></image>
+    </view>
+  </view>
+  <view class="dexter">
+    <view class="help" bindtap="aid">帮助</view>
+    <image class="logo" src="../../assets/refurbish.png"></image>
+  </view>
+</view>
+<view class="collect" wx:if="{{books.length>0}}">
+  <view wx:for="{{books}}" wx:key="index"  >
+    <view class="enshrine">
+      <image animation="{{animation}}" class="photograph" src="{{url+item.cover}}"></image>
+      <view>{{item.title}}</view>
+      <view class="expurgate" wx:if="{{show===true}}">
+      <image class="remove" data-item="{{item}}" data-index="{{index}}" bindtap="cancel"  src="../../assets/remove.png"></image> 
+      </view>
+    </view>
+  </view>
+</view>
+<view class="collect1" wx:if="{{books.length===0}}">
+主人还没有收藏书籍哦，请去书城收藏吧！
+</view>

@@ -1,0 +1,28 @@
+<view class="nav_title">
+<view class="headBox"></view>
+  <view class="nav_tab">
+    <!-- 如果选中的下表等于当前的索引，就使用active class名，否则class名为common -->
+    <view wx:for="{{list}}" wx:key="list" class="{{selected==index?'active':'common'}}" data-index='{{index}}'
+      bindtap="selected">
+      {{item}}
+      <!-- 如果选中的下表等于当前的索引，就添加下划线 -->
+      <view class="{{selected==index?'nav_underline':''}}"></view>
+    </view>
+  </view>
+  <!-- tab1  -->
+  <view wx:if="{{selected == 0}}">
+    <view class="tltle">男生</view>
+    <classify wx:if="{{male.length}}>0" list='{{male}}'></classify>
+    <view class="tltle">女生</view>
+    <classify wx:if="{{female.length}}>0" list='{{female}}'></classify>
+    <view class="tltle">出版</view>
+    <classify wx:if="{{press.length}}>0" list='{{press}}'></classify>
+  </view>
+  <!-- tab2 -->
+  <view wx:if="{{selected == 1}}">
+    <view class="tltle">男生</view>
+    <ranking wx:if="{{arr1.length}}>0" arr="{{arr1}}"></ranking>
+    <view class="tltle">女生</view>
+    <ranking wx:if="{{arr2.length}}>0" arr="{{arr2}}"></ranking>
+  </view>
+</view>

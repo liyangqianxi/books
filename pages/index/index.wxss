@@ -1,0 +1,49 @@
+.logo{
+  width: 70rpx;
+  height: 70rpx;
+}
+.head{
+  padding: 40rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.help{
+  border: 1rpx solid black;
+  padding: 10rpx 20rpx;
+  border-radius: 15rpx;
+  margin-right: 20rpx;
+}
+.dexter{
+  display: flex;
+}
+.collect{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+.photograph{
+  width: 220rpx;
+  height: 320rpx;
+  margin-right: 10rpx;
+  position: relative;
+}
+.enshrine{
+  text-align: center;
+}
+.remove{
+  width: 70rpx;
+  height: 70rpx;
+  
+}
+.expurgate{
+  position: absolute;
+  top: 160rpx;
+  /* left: 185rpx; */
+  z-index: 999;
+}
+.collect1{
+  display: flex;
+  width: 90%;
+  margin: 10rpx auto;
+  font-size: 36rpx;
+}
