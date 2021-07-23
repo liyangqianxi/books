@@ -113,6 +113,7 @@ Page({
   },
   // 加入书籍
   join() {
+    console.log(this.data.details);
     utils.saveHistory({
       key: "collect",
       data: this.data.details,

@@ -32,7 +32,7 @@
       <view>
         <image class="logo" src="../../assets/delete.png"></image>
       </view>
-      <view class="delete" bindtap="switchover">删除</view>
+      <view class="delete" bindtap="leave">删除</view>
     </view>
   </view>
   <view wx:for="{{gather}}" wx:key="index" data-item="{{item}}" data-index="{{index}}" bindtap="collect">

@@ -155,7 +155,22 @@ Page({
       show:true,
       value:e.currentTarget.dataset.item.name
     })
+    utils.saveHistory({
+      key: "search",
+      data: this.data.value,
+      attr: "name"
+    })
     this.bookSearch()
+    this.setData({
+      gather: wx.getStorageSync('searchHistory')
+    })
+  },
+  // 删除历史
+  leave(){
+    wx.setStorageSync('searchHistory', null)
+    this.setData({
+      gather: wx.getStorageSync('searchHistory')
+    })
   },
   // 点击大家都在搜
   switchexchange(e){
@@ -165,7 +180,15 @@ Page({
       show:true,
       value:e.currentTarget.dataset.v.word
     })
+    utils.saveHistory({
+      key: "search",
+      data: this.data.value,
+      attr: "name"
+    })
     this.bookSearch()
+    this.setData({
+      gather: wx.getStorageSync('searchHistory')
+    })
   },
   /**
    * 生命周期函数--监听页面加载
