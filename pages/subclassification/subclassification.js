@@ -170,7 +170,7 @@ Page({
   // 书籍
   getCatsBooks() {
     api.getCatsBooks(this.data.gender, this.data.type, this.data.major, this.data.minor, this.data.start).then(res => {
-      // console.log(res);
+      console.log(res);
       this.setData({
         book: this.data.book.concat(res.books),
         total: res.total
